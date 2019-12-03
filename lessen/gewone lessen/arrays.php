@@ -7,7 +7,7 @@ $producten[1] = "CD's";
 $producten[2] = "Smartphones";
 $producten[3] = "DVD's";
 
-/*echo "<br>---- Opgave 6: print_r() ";
+echo "<br>---- Opgave 6: print_r() ";
 print_r($producten);
 
 echo "<br>---- Opgave 7: var_dump(): ";
@@ -47,16 +47,16 @@ echo "<br>---- Opgave 15: ";
 array_unshift($producten, "TV's", "Stereo's");
 echo "Tv's en Stereo's toegevoegd: ";
 print_r($producten);
-*/
-/*echo "<br>---- Opgave 16: ";
+
+echo "<br>---- Opgave 16: ";
 $random_keys = array_rand($producten, 2);
 echo "<br />Eerste random product: " . $producten[$random_keys[0]];
 echo "<br />Tweede random product: " . $producten[$random_keys[1]];
-*/
+
 function printArray($item, $key) {
     echo "<br>$key" . ": " . "<i> $item </i>";
 }
-/*echo "<br>---- Opgave 17: Producten array doorlopen: ";
+echo "<br>---- Opgave 17: Producten array doorlopen: ";
 array_walk($producten, 'printArray');
 
 $getallen = ["nul", "een", "twee", "drie", "vier", "vijf"];
@@ -93,4 +93,4 @@ array_walk_recursive($boeken, "printArray");
 
 echo "<br>---- Opgave23: Array-elementen kopiëren:";
 $oudeboeken = array_slice($boeken, 0, 2);
-array_walk_recursive($oudeboeken, "printArray");*/
+array_walk_recursive($oudeboeken, "printArray");
