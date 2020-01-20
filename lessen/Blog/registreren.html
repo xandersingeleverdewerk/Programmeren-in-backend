@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <style>
+        body{font-family: Verdana,serif; font-size: 10px;}
+        form{border: 1px solid black; text-align: center; width: 80%; padding-bottom: 20px;}
+    </style>
+    <title>registreren</title>
+</head>
+<body>
+<form action="registreren.php" method="post" enctype="multipart/form-data">
+    <br>
+    <label>
+        <input required type="text" name="naam" placeholder="Naam" />
+    </label><br>
+    <label>
+        <input required type="email" name="e-mail" placeholder="e-mail" />
+    </label><br>
+    <label>
+        <input required type="password" name="password" placeholder="Wachtwoord" />
+    </label><br>
+    <p>Upload je foto:</p>
+    <input type="file" name="foto" id="foto"><br><br>
+    <input type="submit" name="submit" value=" Registreren " />
+    <a href="inloggen.html"><input type="button" name="annuleren" value="Anuleren " /></a>
+</form>
+</body>
+</html>

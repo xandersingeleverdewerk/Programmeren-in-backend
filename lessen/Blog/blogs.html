@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="blogs.css" type="text/css" media="all" />
+</head>
+<body>
+<nav>
+    <a href="welkom.php"> <input type="button" name="home" value="home " /></a>
+    <a href="uitloggen.php"><input type="button" name="terug" value="uitloggen " /></a>
+</nav>
+<h2>Blog Form</h2>
+<form action="blogs.php" method="post" class="form">
+    <p class="name">
+        <input type="text" name="naam" id="name">
+        <label for="name">Naam</label>
+    </p>
+    <p class="text">
+        <label>
+            <textarea name="text" placeholder="Schrijf de boodschap in." ></textarea>
+        </label>
+    </p>
+    <p class="submit">
+        <input type="submit" name="submit" value="Verstuur">
+    </p>
+</form>
+</body>
+</html>
